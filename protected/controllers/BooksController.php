@@ -353,11 +353,11 @@ class BooksController extends Controller
 
         if ($year['active']) {
             if($year['none'] == 'true'){
-                $criteria->addCondition('published_year IS NULL');
+                $criteria->addCondition('published_year IS NULL', 'OR');
             } else {
                 if(!empty($year['query'])){
-                    $criteria->addCondition('`published_year` = :year', 'OR');
-                    $criteria->params = [':year'=>intval($year['query'])];
+                    $criteria->addCondition(sprintf('published_year = %d',$year['query']), 'OR');
+                    //$criteria->params = [':year'=>intval($year['query'])];
                 }
             }
         }

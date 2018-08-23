@@ -9,3 +9,4 @@ public/assets/*
 
 
 protected/config/database.php
+protected/runtime/*
