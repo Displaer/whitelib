@@ -1,0 +1,898 @@
+2018/08/23 07:28:14 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "пшш". in C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('\xD0\xBF\xD1\x88\xD1\x88')
+#1 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/white/public/index.php?r=%D0%BF%D1%88%D1%88
+---
+2018/08/23 07:43:17 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "authors". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:486
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(270): CController->missingAction('authors')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('authors')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('site/authors')
+#3 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/white/public/index.php?r=site/authors
+HTTP_REFERER=http://localhost/white/public/index.php?r=site
+---
+2018/08/23 07:43:25 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "settings". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:486
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(270): CController->missingAction('settings')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('settings')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('site/settings')
+#3 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/white/public/index.php?r=site/settings
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/index
+---
+2018/08/23 07:47:17 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "authors". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:486
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(270): CController->missingAction('authors')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('authors')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('site/authors')
+#3 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/white/public/index.php?r=site/authors
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/index
+---
+2018/08/23 07:50:16 [error] [exception.Error] Error: Call to a member function getErrors() on null in C:\SERVER\xampp\htdocs\white\framework\web\helpers\CHtml.php:2218
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\widgets\CActiveForm.php(554): CHtml::errorSummary(Array, NULL, NULL, Array)
+#1 C:\SERVER\xampp\htdocs\white\protected\views\site\settings.php(38): CActiveForm->errorSummary(NULL)
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CBaseController.php(126): require('C:\\SERVER\\xampp...')
+#3 C:\SERVER\xampp\htdocs\white\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\SERVER\\xampp...', Array, true)
+#4 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(872): CBaseController->renderFile('C:\\SERVER\\xampp...', Array, true)
+#5 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(785): CController->renderPartial('settings', Array, true)
+#6 C:\SERVER\xampp\htdocs\white\protected\controllers\SiteController.php(64): CController->render('settings', Array)
+#7 C:\SERVER\xampp\htdocs\white\framework\web\actions\CInlineAction.php(49): SiteController->actionSettings()
+#8 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('settings')
+#12 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('site/settings')
+#13 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/white/public/index.php?r=site/settings
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/index
+---
+2018/08/23 07:50:27 [error] [exception.Error] Error: Call to a member function getErrors() on null in C:\SERVER\xampp\htdocs\white\framework\web\helpers\CHtml.php:2218
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\widgets\CActiveForm.php(554): CHtml::errorSummary(Array, NULL, NULL, Array)
+#1 C:\SERVER\xampp\htdocs\white\protected\views\site\authors.php(38): CActiveForm->errorSummary(NULL)
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CBaseController.php(126): require('C:\\SERVER\\xampp...')
+#3 C:\SERVER\xampp\htdocs\white\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\SERVER\\xampp...', Array, true)
+#4 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(872): CBaseController->renderFile('C:\\SERVER\\xampp...', Array, true)
+#5 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(785): CController->renderPartial('authors', Array, true)
+#6 C:\SERVER\xampp\htdocs\white\protected\controllers\SiteController.php(55): CController->render('authors', Array)
+#7 C:\SERVER\xampp\htdocs\white\framework\web\actions\CInlineAction.php(49): SiteController->actionAuthors()
+#8 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('authors')
+#12 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('site/authors')
+#13 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/white/public/index.php?r=site/authors
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/index
+---
+2018/08/23 07:59:49 [error] [exception.CException] CException: SiteController cannot find the requested view "book-script". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:881
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\protected\views\site\index.php(6): CController->renderPartial('book-script')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CBaseController.php(126): require('C:\\SERVER\\xampp...')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\SERVER\\xampp...', NULL, true)
+#3 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(872): CBaseController->renderFile('C:\\SERVER\\xampp...', NULL, true)
+#4 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(785): CController->renderPartial('index', NULL, true)
+#5 C:\SERVER\xampp\htdocs\white\protected\controllers\SiteController.php(32): CController->render('index')
+#6 C:\SERVER\xampp\htdocs\white\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#12 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/white/public/index.php?r=site/index
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/settings
+---
+2018/08/23 07:59:51 [error] [exception.CException] CException: SiteController cannot find the requested view "book-script". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:881
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\protected\views\site\index.php(6): CController->renderPartial('book-script')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CBaseController.php(126): require('C:\\SERVER\\xampp...')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\SERVER\\xampp...', NULL, true)
+#3 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(872): CBaseController->renderFile('C:\\SERVER\\xampp...', NULL, true)
+#4 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(785): CController->renderPartial('index', NULL, true)
+#5 C:\SERVER\xampp\htdocs\white\protected\controllers\SiteController.php(32): CController->render('index')
+#6 C:\SERVER\xampp\htdocs\white\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#12 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/white/public/index.php?r=site/index
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/settings
+---
+2018/08/23 08:12:26 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "admin/site/index". in C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/site/inde...')
+#1 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/white/public/index.php?r=admin/site/index
+---
+2018/08/23 08:14:02 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "admin/gii". in C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/gii')
+#1 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/white/public/index.php?r=admin/gii
+---
+2018/08/23 08:24:18 [error] [exception.CException] CException: Alias "admin.AdminModule" is invalid. Make sure it points to an existing PHP file and the file is readable. in C:\SERVER\xampp\htdocs\white\framework\YiiBase.php:330
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\YiiBase.php(204): YiiBase::import('admin.AdminModu...', true)
+#1 C:\SERVER\xampp\htdocs\white\framework\base\CModule.php(282): YiiBase::createComponent(Array, 'admin', NULL, Array)
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(337): CModule->getModule('admin')
+#3 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(276): CWebApplication->createController('books/admin/')
+#4 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/books/adm...')
+#5 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/white/public/index.php?r=admin/books/admin
+HTTP_REFERER=http://localhost/white/public/index.php?r=admin/books/index
+---
+2018/08/23 08:28:18 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "books". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:486
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(270): CController->missingAction('books')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('books')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('site/books')
+#3 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/white/public/index.php?r=site/books
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/authors
+---
+2018/08/23 08:35:36 [error] [php] Undefined variable: partner (C:\SERVER\xampp\htdocs\white\protected\views\site\index-scripts.php:17)
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(872): SiteController->renderFile()
+#1 C:\SERVER\xampp\htdocs\white\protected\views\site\index.php(6): SiteController->renderPartial()
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CBaseController.php(126): require()
+#3 C:\SERVER\xampp\htdocs\white\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(872): SiteController->renderFile()
+#5 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(785): SiteController->renderPartial()
+#6 C:\SERVER\xampp\htdocs\white\protected\controllers\SiteController.php(32): SiteController->render()
+#7 C:\SERVER\xampp\htdocs\white\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\SERVER\xampp\htdocs\white\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/white/public/index.php?r=site/index
+in C:\SERVER\xampp\htdocs\white\protected\views\site\index-scripts.php (17)
+in C:\SERVER\xampp\htdocs\white\protected\views\site\index.php (6)
+in C:\SERVER\xampp\htdocs\white\protected\controllers\SiteController.php (32)
+2018/08/23 08:39:30 [error] [php] Undefined property: stdClass::$id (C:\SERVER\xampp\htdocs\white\protected\views\site\index-scripts.php:19)
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(872): SiteController->renderFile()
+#1 C:\SERVER\xampp\htdocs\white\protected\views\site\index.php(6): SiteController->renderPartial()
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CBaseController.php(126): require()
+#3 C:\SERVER\xampp\htdocs\white\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(872): SiteController->renderFile()
+#5 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(785): SiteController->renderPartial()
+#6 C:\SERVER\xampp\htdocs\white\protected\controllers\SiteController.php(32): SiteController->render()
+#7 C:\SERVER\xampp\htdocs\white\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\SERVER\xampp\htdocs\white\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/white/public/index.php?r=site/index
+in C:\SERVER\xampp\htdocs\white\protected\views\site\index-scripts.php (19)
+in C:\SERVER\xampp\htdocs\white\protected\views\site\index.php (6)
+in C:\SERVER\xampp\htdocs\white\protected\controllers\SiteController.php (32)
+2018/08/23 08:39:31 [error] [php] Undefined property: stdClass::$id (C:\SERVER\xampp\htdocs\white\protected\views\site\index-scripts.php:19)
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(872): SiteController->renderFile()
+#1 C:\SERVER\xampp\htdocs\white\protected\views\site\index.php(6): SiteController->renderPartial()
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CBaseController.php(126): require()
+#3 C:\SERVER\xampp\htdocs\white\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(872): SiteController->renderFile()
+#5 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(785): SiteController->renderPartial()
+#6 C:\SERVER\xampp\htdocs\white\protected\controllers\SiteController.php(32): SiteController->render()
+#7 C:\SERVER\xampp\htdocs\white\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\SERVER\xampp\htdocs\white\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/white/public/index.php?r=site/index
+in C:\SERVER\xampp\htdocs\white\protected\views\site\index-scripts.php (19)
+in C:\SERVER\xampp\htdocs\white\protected\views\site\index.php (6)
+in C:\SERVER\xampp\htdocs\white\protected\controllers\SiteController.php (32)
+2018/08/23 08:53:24 [error] [php] Undefined index: partner_id (C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php:18)
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(286): BooksController->runAction()
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): BooksController->run()
+#3 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\SERVER\xampp\htdocs\white\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/white/public/index.php?r=books/rest
+in C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php (18)
+in C:\SERVER\xampp\htdocs\white\public\index.php (13)
+2018/08/23 09:01:50 [error] [exception.CHttpException.400] CHttpException: invalid_request_do_not_repeat in C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php:190
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\actions\CInlineAction.php(49): BooksController->actionRest()
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#5 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#6 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+---
+2018/08/23 11:50:00 [error] [exception.CException] CException: CHttpRequest and its behaviors do not have a method or closure named "get". in C:\SERVER\xampp\htdocs\white\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\protected\views\layouts\main.php(44): CComponent->__call('get', Array)
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CBaseController.php(126): require('C:\\SERVER\\xampp...')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\SERVER\\xampp...', Array, true)
+#3 C:\SERVER\xampp\htdocs\white\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\SERVER\\xampp...', Array, true)
+#4 C:\SERVER\xampp\htdocs\white\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 C:\SERVER\xampp\htdocs\white\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 C:\SERVER\xampp\htdocs\white\framework\web\CBaseController.php(215): COutputProcessor->run()
+#7 C:\SERVER\xampp\htdocs\white\framework\web\CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#8 C:\SERVER\xampp\htdocs\white\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#9 C:\SERVER\xampp\htdocs\white\framework\web\CBaseController.php(126): require('C:\\SERVER\\xampp...')
+#10 C:\SERVER\xampp\htdocs\white\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\SERVER\\xampp...', Array, true)
+#11 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(787): CBaseController->renderFile('C:\\SERVER\\xampp...', Array, true)
+#12 C:\SERVER\xampp\htdocs\white\protected\controllers\SiteController.php(32): CController->render('index')
+#13 C:\SERVER\xampp\htdocs\white\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#14 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('index')
+#18 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#19 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/white/public/index.php?r=site/index
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/books
+---
+2018/08/23 12:51:18 [error] [php] include(Ba0PartnerRiskCoef.php): failed to open stream: No such file or directory (C:\SERVER\xampp\htdocs\white\framework\YiiBase.php:463)
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php(87): spl_autoload_call()
+#1 C:\SERVER\xampp\htdocs\white\framework\web\actions\CInlineAction.php(49): BooksController->actionRest()
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(286): BooksController->runAction()
+#4 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#5 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): BooksController->run()
+#6 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\SERVER\xampp\htdocs\white\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/white/public/index.php?r=books/rest
+in C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php (87)
+in C:\SERVER\xampp\htdocs\white\public\index.php (13)
+2018/08/23 12:52:59 [error] [php] include(Ba0PartnerRiskCoef.php): failed to open stream: No such file or directory (C:\SERVER\xampp\htdocs\white\framework\YiiBase.php:463)
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php(87): spl_autoload_call()
+#1 C:\SERVER\xampp\htdocs\white\framework\web\actions\CInlineAction.php(49): BooksController->actionRest()
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(286): BooksController->runAction()
+#4 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#5 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): BooksController->run()
+#6 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\SERVER\xampp\htdocs\white\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/white/public/index.php?r=books/rest
+in C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php (87)
+in C:\SERVER\xampp\htdocs\white\public\index.php (13)
+2018/08/23 12:53:18 [error] [php] include(Ba0PartnerRiskCoef.php): failed to open stream: No such file or directory (C:\SERVER\xampp\htdocs\white\framework\YiiBase.php:463)
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php(87): spl_autoload_call()
+#1 C:\SERVER\xampp\htdocs\white\framework\web\actions\CInlineAction.php(49): BooksController->actionRest()
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(286): BooksController->runAction()
+#4 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#5 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): BooksController->run()
+#6 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\SERVER\xampp\htdocs\white\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/white/public/index.php?r=books/rest
+in C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php (87)
+in C:\SERVER\xampp\htdocs\white\public\index.php (13)
+2018/08/23 12:53:30 [error] [php] include(Ba0PartnerRiskCoef.php): failed to open stream: No such file or directory (C:\SERVER\xampp\htdocs\white\framework\YiiBase.php:463)
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php(87): spl_autoload_call()
+#1 C:\SERVER\xampp\htdocs\white\framework\web\actions\CInlineAction.php(49): BooksController->actionRest()
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(286): BooksController->runAction()
+#4 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#5 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): BooksController->run()
+#6 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\SERVER\xampp\htdocs\white\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/white/public/index.php?r=books/rest
+in C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php (87)
+in C:\SERVER\xampp\htdocs\white\public\index.php (13)
+2018/08/23 12:54:15 [error] [php] include(Ba0PartnerRiskCoef.php): failed to open stream: No such file or directory (C:\SERVER\xampp\htdocs\white\framework\YiiBase.php:463)
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php(87): spl_autoload_call()
+#1 C:\SERVER\xampp\htdocs\white\framework\web\actions\CInlineAction.php(49): BooksController->actionRest()
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(286): BooksController->runAction()
+#4 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#5 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): BooksController->run()
+#6 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\SERVER\xampp\htdocs\white\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/white/public/index.php?r=books/rest
+in C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php (87)
+in C:\SERVER\xampp\htdocs\white\public\index.php (13)
+2018/08/23 12:54:19 [error] [php] include(Ba0PartnerRiskCoef.php): failed to open stream: No such file or directory (C:\SERVER\xampp\htdocs\white\framework\YiiBase.php:463)
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php(87): spl_autoload_call()
+#1 C:\SERVER\xampp\htdocs\white\framework\web\actions\CInlineAction.php(49): BooksController->actionRest()
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(286): BooksController->runAction()
+#4 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#5 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): BooksController->run()
+#6 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\SERVER\xampp\htdocs\white\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/white/public/index.php?r=books/rest
+in C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php (87)
+in C:\SERVER\xampp\htdocs\white\public\index.php (13)
+2018/08/23 13:56:58 [error] [php] Undefined variable: item (C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php:93)
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(286): BooksController->runAction()
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): BooksController->run()
+#3 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\SERVER\xampp\htdocs\white\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/white/public/index.php?r=books/rest
+in C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php (93)
+in C:\SERVER\xampp\htdocs\white\public\index.php (13)
+2018/08/23 13:57:28 [error] [exception.Error] Error: Call to a member function attributeLabels() on array in C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php:93
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\actions\CInlineAction.php(49): BooksController->actionRest()
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#5 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#6 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/index
+---
+2018/08/23 14:54:10 [error] [exception.CHttpException.400] CHttpException: invalid_request_do_not_repeat in C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php:179
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\actions\CInlineAction.php(49): BooksController->actionRest()
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#5 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#6 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+---
+2018/08/23 14:55:39 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "admin/books/create". in C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/books/cre...')
+#1 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/white/public/index.php?r=admin/books/create
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/login
+---
+2018/08/23 14:56:10 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "create". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:486
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(270): CController->missingAction('create')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('create')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/create')
+#3 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/white/public/index.php?r=books/create
+---
+2018/08/23 15:06:40 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "books/rest". in C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#1 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/books
+---
+2018/08/23 15:06:40 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "books/rest". in C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#1 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/books
+---
+2018/08/23 15:06:50 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "books". in C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books')
+#1 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/white/public/index.php?r=books
+---
+2018/08/23 15:07:34 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "book". in C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('book')
+#1 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/white/public/index.php?r=book
+---
+2018/08/23 15:09:07 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "rest". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:486
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(270): CController->missingAction('rest')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#3 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php
+---
+2018/08/23 15:09:07 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "rest". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:486
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(270): CController->missingAction('rest')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#3 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php
+---
+2018/08/23 15:09:12 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "rest". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:486
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(270): CController->missingAction('rest')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#3 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/index
+---
+2018/08/23 15:09:12 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "rest". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:486
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(270): CController->missingAction('rest')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#3 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/index
+---
+2018/08/23 15:09:34 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "rest". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:486
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(270): CController->missingAction('rest')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#3 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/books
+---
+2018/08/23 15:09:34 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "rest". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:486
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(270): CController->missingAction('rest')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#3 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/books
+---
+2018/08/23 15:09:41 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "rest". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:486
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(270): CController->missingAction('rest')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#3 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/index
+---
+2018/08/23 15:09:41 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "rest". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:486
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(270): CController->missingAction('rest')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#3 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/index
+---
+2018/08/23 15:09:49 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "rest". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:486
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(270): CController->missingAction('rest')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#3 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/books
+---
+2018/08/23 15:09:49 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "rest". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:486
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(270): CController->missingAction('rest')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#3 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/books
+---
+2018/08/23 15:15:57 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "rest". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:486
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(270): CController->missingAction('rest')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#3 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/books
+---
+2018/08/23 15:15:57 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "rest". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:486
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(270): CController->missingAction('rest')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#3 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/books
+---
+2018/08/23 17:17:59 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "rest". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:486
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(270): CController->missingAction('rest')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#3 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/books
+---
+2018/08/23 17:17:59 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "rest". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:486
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(270): CController->missingAction('rest')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#3 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/books
+---
+2018/08/23 17:18:19 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "rest". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:486
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(270): CController->missingAction('rest')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#3 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/books
+---
+2018/08/23 17:18:19 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "rest". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:486
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(270): CController->missingAction('rest')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#3 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/books
+---
+2018/08/23 17:18:25 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "rest". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:486
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(270): CController->missingAction('rest')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#3 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/books
+---
+2018/08/23 17:18:25 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "rest". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:486
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(270): CController->missingAction('rest')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#3 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/books
+---
+2018/08/23 17:19:43 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\SERVER\xampp\htdocs\white\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\SERVER\xampp\htdocs\white\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#8 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#9 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/books
+---
+2018/08/23 17:19:43 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\SERVER\xampp\htdocs\white\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\SERVER\xampp\htdocs\white\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#8 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#9 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/books
+---
+2018/08/23 17:19:50 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\SERVER\xampp\htdocs\white\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\SERVER\xampp\htdocs\white\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#8 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#9 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/index
+---
+2018/08/23 17:19:50 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\SERVER\xampp\htdocs\white\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\SERVER\xampp\htdocs\white\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#8 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#9 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/index
+---
+2018/08/23 21:31:47 [error] [php] Undefined index: count (C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php:314)
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilterChain.php(134): BooksController->runAction()
+#2 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#4 C:\SERVER\xampp\htdocs\white\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#5 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#8 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): BooksController->run()
+#9 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\SERVER\xampp\htdocs\white\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/white/public/index.php?r=books/rest
+in C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php (314)
+in C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php (167)
+in C:\SERVER\xampp\htdocs\white\public\index.php (13)
+2018/08/23 21:47:47 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `tbl_books` `t` WHERE published_year=:year.
+in C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php (366)
+in C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php (167)
+in C:\SERVER\xampp\htdocs\white\public\index.php (13)
+2018/08/23 21:47:47 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `tbl_books` `t` WHERE published_year=:year in C:\SERVER\xampp\htdocs\white\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\SERVER\xampp\htdocs\white\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 C:\SERVER\xampp\htdocs\white\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php(366): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php(167): BooksController->applyFilter(Array)
+#5 C:\SERVER\xampp\htdocs\white\framework\web\actions\CInlineAction.php(49): BooksController->actionRest()
+#6 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#10 C:\SERVER\xampp\htdocs\white\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#15 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#16 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/index
+---
+2018/08/23 21:48:18 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `tbl_books` `t` WHERE published_year=:year.
+in C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php (366)
+in C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php (167)
+in C:\SERVER\xampp\htdocs\white\public\index.php (13)
+2018/08/23 21:48:18 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `tbl_books` `t` WHERE published_year=:year in C:\SERVER\xampp\htdocs\white\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\SERVER\xampp\htdocs\white\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 C:\SERVER\xampp\htdocs\white\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php(366): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php(167): BooksController->applyFilter(Array)
+#5 C:\SERVER\xampp\htdocs\white\framework\web\actions\CInlineAction.php(49): BooksController->actionRest()
+#6 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#10 C:\SERVER\xampp\htdocs\white\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#15 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#16 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/index
+---
+2018/08/23 21:49:16 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `tbl_books` `t` WHERE published_year=:year.
+in C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php (366)
+in C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php (167)
+in C:\SERVER\xampp\htdocs\white\public\index.php (13)
+2018/08/23 21:49:16 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `tbl_books` `t` WHERE published_year=:year in C:\SERVER\xampp\htdocs\white\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\SERVER\xampp\htdocs\white\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 C:\SERVER\xampp\htdocs\white\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php(366): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php(167): BooksController->applyFilter(Array)
+#5 C:\SERVER\xampp\htdocs\white\framework\web\actions\CInlineAction.php(49): BooksController->actionRest()
+#6 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#10 C:\SERVER\xampp\htdocs\white\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#15 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#16 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/index
+---
+2018/08/23 21:50:46 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `tbl_books` `t` WHERE published_year=:year.
+in C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php (366)
+in C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php (167)
+in C:\SERVER\xampp\htdocs\white\public\index.php (13)
+2018/08/23 21:50:46 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `tbl_books` `t` WHERE published_year=:year in C:\SERVER\xampp\htdocs\white\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\SERVER\xampp\htdocs\white\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 C:\SERVER\xampp\htdocs\white\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php(366): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php(167): BooksController->applyFilter(Array)
+#5 C:\SERVER\xampp\htdocs\white\framework\web\actions\CInlineAction.php(49): BooksController->actionRest()
+#6 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#10 C:\SERVER\xampp\htdocs\white\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#15 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#16 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/index
+---
+2018/08/23 21:53:03 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `tbl_books` `t` WHERE published_year=:year.
+in C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php (367)
+in C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php (167)
+in C:\SERVER\xampp\htdocs\white\public\index.php (13)
+2018/08/23 21:53:03 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `tbl_books` `t` WHERE published_year=:year in C:\SERVER\xampp\htdocs\white\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\SERVER\xampp\htdocs\white\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 C:\SERVER\xampp\htdocs\white\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php(367): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\SERVER\xampp\htdocs\white\protected\controllers\BooksController.php(167): BooksController->applyFilter(Array)
+#5 C:\SERVER\xampp\htdocs\white\framework\web\actions\CInlineAction.php(49): BooksController->actionRest()
+#6 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#10 C:\SERVER\xampp\htdocs\white\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\SERVER\xampp\htdocs\white\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#15 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('books/rest')
+#16 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/white/public/index.php?r=books/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/index
+---
+2018/08/23 22:21:58 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "rest". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:486
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(270): CController->missingAction('rest')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('authors/rest')
+#3 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/white/public/index.php?r=authors/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/authors
+---
+2018/08/23 22:22:14 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "rest". in C:\SERVER\xampp\htdocs\white\framework\web\CController.php:486
+Stack trace:
+#0 C:\SERVER\xampp\htdocs\white\framework\web\CController.php(270): CController->missingAction('rest')
+#1 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(282): CController->run('rest')
+#2 C:\SERVER\xampp\htdocs\white\framework\web\CWebApplication.php(141): CWebApplication->runController('authors/rest')
+#3 C:\SERVER\xampp\htdocs\white\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\SERVER\xampp\htdocs\white\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/white/public/index.php?r=authors/rest
+HTTP_REFERER=http://localhost/white/public/index.php?r=site/authors
+---

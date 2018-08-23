@@ -1,0 +1,9 @@
+
+public/node_modules
+public/node_modules/*
+
+public/assets
+public/assets/*
+
+
+protected/config/database.php
