@@ -208,6 +208,58 @@ class BooksController extends Controller
 
                             }
                                 break;
+                            case "one":{
+                                if(isset($_POST['id'])){
+
+                                    $model = $this->loadModel($_POST['id']);
+
+                                    if($model) {
+
+                                        $row = [];
+                                        $col = [];
+
+                                        $col[] = sprintf('<td colspan="2" align="right"><button class="btn btn-danger btn-close right">%s</button></td>', 'x');
+                                        $row[] = sprintf('<tr>%s</tr>', implode('',$col));
+                                        $col = [];
+
+                                        $col[] = sprintf('<th colspan="2"><h2>%s</h2></th>', $model->name);
+                                        $row[] = sprintf('<tr>%s</tr>', implode('',$col));
+                                        $col = [];
+
+                                        $col[] = sprintf('<td rowspan="2"><img src="%s" width="180"></td>', (($model->cover_erl) ? $model->cover_erl:Yii::app()->request->baseUrl . '/images/nocover.jpeg'));
+                                        $col[] = sprintf('<td>%s</td>', $model->longname);
+
+                                        $row[] = sprintf('<tr>%s</tr>', implode('',$col));
+                                        $col = [];
+                                        $col[] = sprintf('<td>Автор(ы):<br>%s</td>', $model->getAuthors());
+                                        $row[] = sprintf('<tr>%s</tr>', implode('',$col));
+                                        $col = [];
+
+                                        $col[] = sprintf('<td colspan="2"><p>Аннотация</p><p>%s</p></td>', $model->annotation);
+
+
+                                        $row[] = sprintf('<tr> %s</tr>', implode('',$col));
+                                        $col = [];
+
+                                        $col[] = sprintf('<td>Год:%s</td>', $model->published_year);
+                                        $col[] = sprintf('<td>Страниц:%s</td>', $model->page_count);
+
+                                        $row[] = sprintf('<tr>%s</tr>', implode('',$col));
+
+
+
+                                        printf('<table class="table table-hover">%s</table>', implode('', $row));
+
+
+                                    } else {
+                                        echo 'Wrong request';
+                                    }
+                                } else {
+                                    echo 'Wrong request';
+                                }
+
+                            }
+                                break;
                             case "add":{}
                                 break;
                             case "remove":{}

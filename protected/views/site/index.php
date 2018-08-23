@@ -11,5 +11,8 @@ $this->breadcrumbs=array(
     <div class="search-form"></div>
     <br>
     <div class="book-list"></div>
+    <br>
+    <div class="book-view" style="display: none;"></div>
+    <br>
 </div>
 <?php $this->renderPartial('index-scripts'); ?>

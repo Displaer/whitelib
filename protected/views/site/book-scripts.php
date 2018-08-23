@@ -41,7 +41,7 @@ $partner = new stdClass();
                     return 'Invalid data';
                 }
             },
-            loadAuthors:function(){
+            loadBooks:function(){
                 $.ajax({
                     type: "POST",
                     dataType: 'JSON',
@@ -68,7 +68,7 @@ $partner = new stdClass();
                  load books
                  */
                 // load books
-                this.loadAuthors();
+                this.loadBooks();
             }
         };
         reader.init();

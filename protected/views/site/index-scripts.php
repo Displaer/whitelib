@@ -113,7 +113,7 @@ $partner = new stdClass();
 
                         reader.filterBook = filter;
                         //console.log(reader.filterBook);
-                        reader.loadAuthors();
+                        reader.loadBooks();
 
                     });
 
@@ -123,12 +123,12 @@ $partner = new stdClass();
                     .bind("click", function () {
                         reader.loadSearchForm();
                         reader.filterBook = {};
-                        reader.loadAuthors()
+                        reader.loadBooks()
                     });
 
             },
 
-            loadAuthors:function(){
+            loadBooks:function(){
                 $("#container .book-list").html('<center><img src="<?=Yii::app()->request->baseUrl . '/images/loading.webp';?>"></center>');
                 $.ajax({
                     type: "POST",
@@ -146,6 +146,7 @@ $partner = new stdClass();
                         } else {
                             $("#container .book-list").empty();
                             $(reader.buildTable(data.table)).appendTo("#container .book-list");
+                            reader.rebindBookList();
                         }
                     },
                     error:function (xhr,e,error) {
@@ -155,9 +156,55 @@ $partner = new stdClass();
                 });
             },
 
+            rebindBookList:function () {
+                $("#container .book-list tr.pointer")
+                    .unbind("click")
+                    .bind("click", function () {
+                      var id = $(this).attr('id');
+                        reader.loadOneBook(id);
+                    });
+            },
+            loadOneBook:function (id) {
+                $.ajax({
+                    type: "POST",
+                    /*dataType: 'JSON',*/
+                    url: this.baseUrl,
+                    data: {
+                        YII_CSRF_TOKEN:this.YiiCsrfToken,
+                        product:"reader",
+                        action:"one",
+                        id:id
+                    },
+                    success: function (data) {
+                        if (data) {
+                            $("#container .book-view")
+                                .empty()
+                                .html(data)
+                                .show();
+                            $("#container .book-list").hide()
+                            reader.rebindBookView();
+                        } else {
+                            alert('Error');
+                        }
+                    },
+                    error:function (xhr,e,error) {
+                        alert(xhr.statusText);
+                    }
 
+                });
 
-            // #### End Risk Sttn ####s
+            },
+
+            rebindBookView:function () {
+
+                $("#container .book-view .btn-close")
+                    .unbind("click")
+                    .bind("click",function () {
+                        $("#container .book-view").hide();
+                        $("#container .book-list").show()
+                    });
+
+            },
 
             // Init
             init:function () {
@@ -170,7 +217,7 @@ $partner = new stdClass();
                 this.loadSearchForm();
 
                 // load books
-                this.loadAuthors();
+                this.loadBooks();
 
             }
         };
