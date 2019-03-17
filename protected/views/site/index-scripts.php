@@ -60,9 +60,9 @@ $partner = new stdClass();
             rebindSearchForm:function () {
 
                 // deactivate all rows
-                $("#container .search-form .word," +
+                /*$("#container .search-form .word," +
                     "#container .search-form .year," +
-                    "#container .search-form .count").prop('disabled', true);
+                    "#container .search-form .count").prop('disabled', true);*/
 
 
                 // activate row
@@ -86,30 +86,30 @@ $partner = new stdClass();
                     .unbind("click")
                     .bind("click", function () {
                         var filter = {};
-                        if($("#container .search-form .activeWordSearch").is(":checked")){
+                        /*if($("#container .search-form .activeWordSearch").is(":checked")){*/
                             filter['word'] = {
                                 'active':true,
                                 'query':String($("#container .search-form .queryWord").val()),
                                 'inBookName':$("#container .search-form .inBookName").is(":checked"),
                                 'inAuthorName':$("#container .search-form .inAuthorName").is(":checked")
                             };
-                        }
+                        /*}*/
 
-                        if($("#container .search-form .activeYearSearch").is(":checked")){
+                        /*if($("#container .search-form .activeYearSearch").is(":checked")){*/
                             filter['year'] = {
                                 'active':true,
                                 'query':String($("#container .search-form .queryYear").val()),
                                 'none':$("#container .search-form .nonYear").is(":checked")
                             };
-                        }
+                        /*}*/
 
-                        if($("#container .search-form .activeAuthorCountSearch").is(":checked")){
+                        /*if($("#container .search-form .activeAuthorCountSearch").is(":checked")){*/
                             filter['count'] = {
                                 'active':true,
                                 'query':String($("#container .search-form .queryCount").val()),
                                 'none':$("#container .search-form .nonCount").is(":checked")
                             };
-                        }
+                        /*}*/
 
                         reader.filterBook = filter;
                         //console.log(reader.filterBook);
@@ -214,7 +214,7 @@ $partner = new stdClass();
                  */
 
                 // search form
-                this.loadSearchForm();
+                this.rebindSearchForm();
 
                 // load books
                 this.loadBooks();

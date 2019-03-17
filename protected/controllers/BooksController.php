@@ -123,8 +123,10 @@ class BooksController extends Controller
 	public function actionIndex()
 	{
 		$dataProvider=new CActiveDataProvider('TblBooks');
+        $model = TblBooks::model();
 		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
+            'model'=>$model,
+		    'dataProvider'=>$dataProvider,
 		));
 	}
 
@@ -154,9 +156,7 @@ class BooksController extends Controller
                         $action = trim($_POST['action']);
                         switch ($action) {
                             case "form":{
-
-
-                                $template = '<table class="table table-borderless table-hover" ><tbody ><tr ><td ><input activate="word" class="activeWordSearch activate" type="checkbox"/ ></td ><td ><input class="form-control queryWord word" type="text" placeholder="Слово"/ ></td ><td ><label style="white-space: nowrap;" ><input class="inBookName word" type="checkbox" checked/> В назвнии книгах </label ><label style="white-space: nowrap;" ><input class="inAuthorName word" type="checkbox" checked/> В ФИО авторах </label ></td ></tr ><tr ><td ><input activate="year" class="activeYearSearch activate" type="checkbox"/ ></td ><td ><input class="form-control queryYear year" type="number" placeholder="Год издания/написания"/ ></td ><td ><label style="white-space: nowrap;" ><input class="nonYear year" type="checkbox"/> Не указанно </label ></td ></tr ><tr ><td ><input activate="count" class="activeAuthorCountSearch activate" type="checkbox"/ ></td ><td ><input class="form-control queryCount count" type="number" placeholder="Количество Авторов"/ ></td ><td ><label style="white-space: nowrap;" ><input class="nonCount count" type="checkbox"/> Не указанно </label ></td ></tr ><tr ><td colspan="3" ><div class=" btn-group" ><button class="btn btn-primary btn-search">Поиск</button ><button class="btn btn-danger btn-reset">Сброс</button ></div ></td ></tr ></tbody></table>';
+                                $template = '';
 
                                 print  $template;
                             }
@@ -177,7 +177,6 @@ class BooksController extends Controller
                                         if (
                                             $fld!='id'
                                         ){
-
                                             if($fld=='authors'){
                                                 $head[$fld] = 'Авторы';
                                             } else {
@@ -202,7 +201,9 @@ class BooksController extends Controller
                                     $table = ['data'=>$data, 'head'=>$head];
                                     print(json_encode(['error'=>false,'table'=>$table], JSON_OBJECT_AS_ARRAY));
                                 } else {
-                                    print(json_encode(['error'=>true,'message'=>'Empty data']));
+                                    $table = ['data'=>[], 'head'=>['По Вашему запросу ничего не найдено']];
+                                    print(json_encode(['error'=>false,'table'=>$table], JSON_OBJECT_AS_ARRAY));
+                                    //print(json_encode(['error'=>true,'message'=>'Empty data']));
                                 }
 
 
@@ -215,6 +216,12 @@ class BooksController extends Controller
 
                                     if($model) {
 
+
+                                        $this->renderPartial('one',array(
+                                            'model'=>$model,
+                                        ));
+
+                                        /*die
                                         $row = [];
                                         $col = [];
 
@@ -248,7 +255,7 @@ class BooksController extends Controller
 
 
 
-                                        printf('<table class="table table-hover">%s</table>', implode('', $row));
+                                        printf('<table class="table table-hover">%s</table>', implode('', $row));*/
 
 
                                     } else {

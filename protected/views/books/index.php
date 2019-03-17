@@ -12,9 +12,34 @@ $this->menu=array(
 );
 ?>
 
-<h1>Tbl Books</h1>
+<h1>Список книг</h1>
 
-<?php $this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
-)); ?>
+<?php $this->widget('zii.widgets.grid.CGridView',
+	array(
+	    'id'=>'tbl-books-grid',
+        'dataProvider'=>$model->search(),
+        'filter'=>$model,
+        'columns'=>array(
+		'id',
+		'name',
+		'longname',
+		'annotation',
+		array(
+			'header'=>'authors',
+			'value'=>'$data->getAuthors()'
+		),
+
+		'published_year',
+		'page_count',
+
+		/*
+		'book_url',
+
+		'cover_erl',
+		'author_count',
+		'active',
+		'deleted',
+		*/
+		)
+	));
+?>
