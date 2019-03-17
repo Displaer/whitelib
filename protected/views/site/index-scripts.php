@@ -121,7 +121,7 @@ $partner = new stdClass();
                 $("#container .search-form .btn-reset")
                     .unbind("click")
                     .bind("click", function () {
-                        reader.loadSearchForm();
+                        reader.resetSearchForm();
                         reader.filterBook = {};
                         reader.loadBooks()
                     });
@@ -204,6 +204,20 @@ $partner = new stdClass();
                         $("#container .book-list").show()
                     });
 
+            },
+
+            resetSearchForm:function () {
+
+                $("#container .search-form .queryWord").val('');
+                $("#container .search-form .inBookName").prop('checked',true);
+                $("#container .search-form .inAuthorName").prop('checked',true);
+
+                $("#container .search-form .queryYear").val('');
+                $("#container .search-form .nonYear").prop('checked',false);
+
+                $("#container .search-form .queryCount").val('');
+                $("#container .search-form .nonCount").prop('checked',false);
+                
             },
 
             // Init
